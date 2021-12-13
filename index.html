@@ -2,4 +2,7 @@
 <script>const go = () => {
     location.href = `spotify:${window.location.search.replaceAll('?', '')}`;
 }
+window.addEventListener("load", () => {
+    go()
+})
 </script>
