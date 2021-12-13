@@ -3,6 +3,8 @@
     location.href = `spotify:${window.location.search.replaceAll('?', '')}`;
 }
 window.addEventListener("load", () => {
-    document.querySelector("button").click()
-})
+    setTimeout(() => {
+        document.querySelector("button").click();
+    }, 1000);
+});
 </script>
