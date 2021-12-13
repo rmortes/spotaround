@@ -1,8 +1,8 @@
 <button onclick="go()" style="width:100%;height:100%;font-size:8rem;" >go</button>
 <script>const go = () => {
-    location.href.replace(`spotify:${window.location.search.replaceAll('?', '')}`);
+    location.href = `spotify:${window.location.search.replaceAll('?', '')}`;
 }
 window.addEventListener("load", () => {
-    setTimeout(go, 1000)
+    document.querySelector("button").click()
 })
 </script>
