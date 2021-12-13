@@ -1,4 +1,5 @@
 <button onclick="go()" style="width:100%;height:100%;font-size:8rem;" >go</button>
 <script>const go = () => {
- window.open(`spotify:${window.location.search.replaceAll('?', '')}`);
-}</script>
+    location.href = `spotify:${window.location.search.replaceAll('?', '')}`;
+}
+</script>
