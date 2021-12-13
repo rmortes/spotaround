@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         const url = `spotify:${window.location.search.replaceAll('?', '')}`;
+        console.log("Redirecting to " + url)
         const go = () => {
             location.href = url
         }
